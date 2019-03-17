@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../css/studycss2.css" />
+		<script type="text/javascript" src="../../js/STUDYJS2.js"></script>
+		<meta charset="utf-8">
+		<title>JS-DOM</title>
+	</head>
+	<body>
+		<div id="head">
+			<h1>JS-DOM</h1>
+		</div>
+		<div id="jsdom1">
+			<h2>什么是DOM？</h2>
+			<p>通过JS来控制HTML/CSS元素的属性</p>
+		</div>
+		<div id="jsdom2">
+
+			<h2>DOM有两种方式操控HTML，第一种通过固定节点（id）</h2>
+			<input type="button" name="" id="inser" value="DOM点击添加新节点在本模块最下方" onclick="jsdom2ajs(1)" />
+			<h2>第二种插入指定节点之前位置</h2>
+			<button type="button" id="inser2" onclick="jsdom2ajs(2)">点击插入到此按钮上方</button>
+
+		</div>
+		<div id="jsdom3">
+			<h2>通过层次找节点</h2>
+			<p>意思就是先找父元素（如div/select），然后将父元素数组化，通过下标来更改这个父元素中第几个标签（子节点）</p>
+			<p>还有一种方式可以查找父节点中第一个子节点或最后一个子节点 parentNode、firstChild、lastChild </p>
+		</div>
+
+		<div id="jsdom4">
+			<h2>通过标签名找节点,使用“变量[下标]”来确定更改位置</h2>
+			<p>getElementsByTagName（）函数来查找节点</p>
+			<a>A节点第一个</a><br>
+			<a>A节点第二个</a><br>
+			<a>A节点第三个</a><br>
+			<button type="button" id="btnupdatetag" onclick="updatetag()">点击查看效果</button>
+		</div>
+		<button type="button" id="resetcss" onclick="reset()" onmouseover="eventmous(1)" onmouseout="eventmous(0)"
+		 onmousedown="eventmous(2)" onmouseup="eventmous(3)">还原</button>
+
+
+
+		<div id="footer">
+
+		</div>
+	</body>
+</html>

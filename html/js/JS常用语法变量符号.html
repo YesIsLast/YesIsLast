@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="../../js/STUDYJS.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/studycss.css" />
+		<meta charset="utf-8">
+		<title>JS常用语法变量符号</title>
+	</head>
+	<body>
+		<div id="head">
+		<h1 style="text-align: center;">es6是JS的一种规格，JS是es6的一种实现</h1>
+		<h3 style="text-align: center;">JS是脚本语言，主要由浏览器读取代码，来执行JS脚本</h3>
+		</div>
+
+		<h2>JS语句的书写规范</h2>
+		<div id="yf01">
+			<h3>首先每次的js代码需要以；表明本行代码结束</h3>
+			<h3>自动忽略多余的空格</h3>
+			<h3>JS代码对于大小写同JAVA一样大小写敏感，大小写弄错就是两个东西</h3>
+			<h3>注释的方法有以下几种。</h3>
+			<h3>//或者/**/，可单独成行注释，也可放置在代码行最后</h3>
+		</div>
+		<h2>JS的变量类型</h2>
+		<div id="yf02">
+			
+			<h3>变量类型有</h3>
+			<p>string类型，number类型，boolean类型，null类型，undefined类型，array类型，object类型</p>
+			<p>声明变量时，无需指定类型，可通过赋值来自动识别变量类型，</p>
+			
+			<h3>数据类型转换方法</h3>
+			<p>可通过toString(),parseInt(),parseFloat(),三个方法来对变量进行转换</p>
+			<p>当不清楚当前变量是什么类型，可使用typeof(),来对当前变量进行查询</p>
+			<button type="button"onclick="yy02b(1);">查询string变量</button>
+			<button type="button"onclick="yy02b(0);">查询number变量</button>
+			<button type="button"onclick="yy02b(2);">强转number变量</button>
+			<input type="text" id="yf02input_a"value="" /><button type="button" onclick="search_yf02input_a();">查询输入内容类型</button>
+			
+			<h3>string类型对于特殊字符转义</h3>
+			<p id="yy02cssa"></p>
+			<button type="button" onclick="yf02a();">点击按钮查看特殊字符处理过的变量</button>
+			
+			<h3>关系运算符‘==’和‘===’的区别</h3>
+			<p>两个的大体一致不过在细节上有所区别，‘==’表示的是去判断左右两边的值是否相同，而‘===’比较的是两边的值和类型是否都相同</p>
+			<button type="button" onclick="yy02d(0)">判断1与"1"是否想等（==）</button>
+			<button type="button" onclick="yy02d(1)">判断1与1是否想等（===）</button>
+			<button type="button" onclick="yy02d(2)">判断1与"1"是否想等（===）</button>
+			
+			<h3>校验输入内容，输入 1 来校验，无需点击事件，（此为onchange事件）</h3>
+			<input type="text" name="" id="yy02cjs" value="校验输入内容"onchange="yy02c(this.id)" />
+			
+		</div>
+		
+		<div id="yf03">
+			<h2>JS的面向对象</h2>
+			<p>JS面向对象与JAVA的声明对象类似,属性和方法都称为对象</p>
+			<p>如我要获取当前的对象，查看一下当前对象里面所包含的值</p>
+			<button type="button" onclick="searchOb()">查看对象值</button>
+		</div>
+		
+		<div id="yf04">
+			<h2>关于JS函数的返回值</h2>
+			<p>通过调取一个函数，将参数传给这个函数，然后在这个函数中调用另一个函数并获取返回值，来显示结果</p>
+			<span>例如：7*7</span><button type="button" onclick="yf0477l(7,3,7)"> = </button><span id="yf0477=">?</span>
+		</div>
+		
+		<div id="yf05">
+			<h2>JS中运算比较逻辑运算符</h2>
+			<p>+-*/    , ><  >=,<=,==  ===  !=   , and&&    ,or||    ,not!</p>
+		</div>
+		
+		<div id="yf06">
+			<h2>判断语句三种方法</h2>
+			<p>if~~else</p>
+			<p>swith~~case~~default~~break;</p>
+			
+		</div>
+		
+		<div id="yf07">
+			<h2>for循环</h2>
+			<button type="button" onclick="yf07for()">点击查看数组内的重复元素</button><span>F12查看具体信息</span>
+			<h2>for/in循环json对象的属性</h2>
+			<span>for(var x in json){}</span>
+			<h2>while循环</h2>
+			<span>while(条件){执行内容}</span>
+			<h2>do/while循环（至少执行一次，当不满足while条件了才会退出循环）</h2>
+			<span>do{执行内容}while(条件)</span>
+		</div>
+		
+		<div id="footer"></div>
+	</body>
+</html>
