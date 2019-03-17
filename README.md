@@ -1,10 +1,3 @@
 # YesIsLast
-这是一个学习的历程
-HELLO GITHUB
-HELLO GITHUB
-HELLO GITHUB
-HELLO GITHUB
-HELLO GITHUB
-HELLO GITHUB
-HELLO GITHUB
-HELLO GITHUB
+刚刚来到天津，经历了面试的失败，决定重新学习前端
+使用这个小项目来记录我的前端HTML/JS/CSS的学习的历程
