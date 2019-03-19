@@ -148,7 +148,7 @@ function yf0477(a, ab, b) {
 
 //for循环
 function yf07for(arr) {
-	var arr = [0, 1, 1,1,1, 2, 4, 4, 6, 8, 8, 8];
+	var arr = [0, 1, 1,6,1, 2, 4, 4, 6, 8, 8, 8];
 	
 	console.log("原始数组"+arr);
 	//声明一个没有重复数值的数组newArr

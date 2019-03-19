@@ -66,3 +66,96 @@ function eventmous(id) {
 		a.innerHTML = "还原";
 	}
 }
+
+function jsq() {
+	var arr = [0, 1, 1, 2, 3];
+
+	for (i = 0; i < arr.length; i++) {
+		if (arr.indexOf(arr[i]) === arr.indexOf(arr[i + 1])) {
+			console.log("在数组中重复的值为" + arr[i]);
+		}
+	}
+	// var nullarr = [];
+	// arr.forEach(
+	// 	function (item, index, arr) {
+	// 		if (arr.indexOf(item) != arr.lastIndexOf(item)&&nullarr.indexOf(item)==-1) {
+	// 			nullarr.push(item);
+	// 		}
+	// 	}
+	// );
+	// console.log("在数组中重复的值为"+nullarr[0]);
+}
+function ssq(a,str){
+	var str2= a.match(str);
+	alert(str2);
+}
+function rep(){
+	var s1tr ='javascript对象';
+	var str = document.getElementById("repli");
+	var endreplice = s1tr.replace('javascript','JAVA');
+	str.innerHTML=endreplice;
+
+	console.log(endreplice);
+}
+function gettimes(inid){
+	var hhtime=document.getElementById("gettime");
+	var hhtime2=document.getElementById("gettime2");
+	var date = new Date();
+	var str,yy,mm,dd,ww;
+	if(inid==1){
+		str=date.getTime();
+		hhtime.value=str;
+	}else if(inid==2){
+		ww=date.getDay();//星期几
+		dd=date.getDate();
+		yy=date.getFullYear();
+		mm=date.getMonth();
+		hhtime2.value=yy+"年"+mm+"月"+dd+"日"+"星期："+ww;
+	}
+
+	console.log("当前值为"+str);
+}
+function arrsort(id){
+	var arr1=[4,4,3,8,7];
+	var arr2=[2,3,3,7,5];
+	var result;
+	var strarrsort1 = document.getElementById("sortarr1");
+	var strarrsort11 = document.getElementById("sortarr11");
+	var strarrsort2 = document.getElementById("sortarr2");
+	var strarrsort3 = document.getElementById("sortarr3");
+	var strarrsort4 = document.getElementById("sortarr4");
+	if(id==1){
+		result=arr1.sort();
+		strarrsort1.value=result;
+	}else if (id==2){
+		result=arr1.concat(arr2);
+		strarrsort2.value=result.sort();
+	}else if(id==3){
+		result=arr1.join();
+		strarrsort3.value=result;
+	}else if (id==4){
+		for(let x in arr1){
+			console.log("数组1中位置"+x+"的值为"+arr1[x]);
+		}
+	}else if(id==11){
+		result=arr1.sort().reverse();
+		strarrsort11.value=result;
+	}
+}
+
+function numto(id){
+	var num = new Number(3.141592653);
+	var strnum1=document.getElementById("tonum1");
+	var strnum2=document.getElementById("tonum2");
+	if(id==1){
+		strnum1.value=num.toString();
+		console.log(num);
+		console.log(num.toString());
+	}else if(id==2){
+		strnum2.value=num.toFixed(3);
+	}
+}
+function rrran(){
+	var strrrran = document.getElementById("rrran");
+	strrrran.innerHTML=Math.random().toFixed(1);
+}
